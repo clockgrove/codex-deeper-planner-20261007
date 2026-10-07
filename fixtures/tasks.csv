@@ -1,0 +1,6 @@
+id,title,duration,depends_on,resource,priority
+a,Compile core,4,,cpu,0
+b,Prepare assets,3,,cpu,2
+c,Collect inputs,2,,,1
+d,Check inputs,1,c,,0
+e,Publish plan,2,a|b,gpu,0
